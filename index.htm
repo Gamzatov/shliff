@@ -157,9 +157,9 @@
 					<a class="btn-shopnow" href="https://vm.tiktok.com/ZMYyoMywu/"><ion-icon
 							name="logo-tiktok"></ion-icon> Tik-Tok</a>
 				</div>
-				<!-- <div class="btn_wrapper down_link">
-			
-				</div> -->
+				<div class="btn_wrapper down_link">
+					<a class="btn-shopnow" href="#contact">Зв'язатися</a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -189,16 +189,25 @@
 			background-repeat: no-repeat;
 		}
 
-		/* .col-md-offset-7,
-		.col-md-5{
-			width: 50%;
-		} */
-		@media(max-width:762px) {
+		.down_link {
+			justify-content: center;
+			max-width: 50%;
+			margin-left: auto;
+			margin-right: -55px;
+		}
 
-			/* .col-md-offset-7,
-		.col-md-5{
-			width: 100%;
-		} */
+
+		@media(max-width:762px) {
+			nav>.container>.navbar-header>.logo_text_wrapper {
+				margin-left: -49px;
+				margin-top: 30px;
+				padding: 0;
+			}
+			.down_link{
+				margin: 0 auto;
+				max-width: 100%;
+			}
+
 			.btn_wrapper {
 				flex-direction: column;
 			}
@@ -653,7 +662,7 @@
 			<div class="row footer-mega">
 				<div class="col-md-4">
 					<div class="footer-contact">
-						<p>Київ, <br />вул.Хрещатик 1.</p>
+						<p>Київ обл., <br /> смт Коцюбинське</p>
 						<p>Email : shlifpallet@ukr.net, <br />Телефон : +380 (97) 285 26 27</p>
 					</div>
 				</div>

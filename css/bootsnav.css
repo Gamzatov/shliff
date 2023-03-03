@@ -999,7 +999,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     
     nav.navbar.bootsnav .navbar-header {
         float: none;
-        display: block;
+        display: flex;
         text-align: center;
         padding-left: 30px;
         padding-right: 30px;
