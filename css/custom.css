@@ -231,7 +231,7 @@ nav.navbar.bootsnav{
 }
 
 .sticked .navbar-brand{
-	padding: 12px 15px;
+	padding: 0px 15px;
 }
 
 .sticked .attr-nav > ul > li > a{
@@ -243,7 +243,7 @@ nav.navbar.bootsnav{
 }
 
 .sticked .navbar-brand img{
-	height: 60px;
+	height: 80px;
 }
 
 .sticky-header .navbar-nav>li{
