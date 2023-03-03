@@ -438,7 +438,7 @@ nav.navbar.bootsnav{
 }
 
 .section-title h2{
-	color: #413f3f;
+	color: #FCC481;
 	font-size: 40px;
 	font-weight: 700;
 }
@@ -708,7 +708,7 @@ nav.navbar.bootsnav{
 
 .design-single span{
 	font-size: 44px;
-	color: #c3c2c2;
+	color: #f3f3f3;
 	font-weight: 600;
 	position: absolute;
 	line-height: 1em;
@@ -718,7 +718,7 @@ nav.navbar.bootsnav{
 
 .design-single h3{
 	font-size: 20px;
-	color: #2c2c2c;
+	color: #FCC481;
 	font-weight: 600;
 }
 
@@ -753,7 +753,7 @@ nav.navbar.bootsnav{
 /**************************************/
 
 .contactus{
-	background: #f2f6f9;
+	background: #9C8D77;
 	padding: 80px 0;
 }
 
