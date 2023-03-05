@@ -158,7 +158,7 @@
 							name="logo-tiktok"></ion-icon> Tik-Tok</a>
 				</div>
 				<div class="btn_wrapper down_link">
-					<a class="btn-shopnow" href="#contact">Зв'язатися</a>
+					<a class="btn-shopnow" href="#contact"> <ion-icon name="call-outline"></ion-icon> Зв'язатися</a>
 				</div>
 			</div>
 		</div>
@@ -191,11 +191,16 @@
 
 		.down_link {
 			justify-content: center;
-			max-width: 50%;
+			max-width: 512px;
 			margin-left: auto;
-			margin-right: -55px;
+			/* margin-right: -55px; */
 		}
 
+		.down_link>a {
+			width: 100%;
+			text-align: center;
+			background-color: #111;
+		}
 
 		@media(max-width:762px) {
 			nav>.container>.navbar-header>.logo_text_wrapper {
@@ -203,7 +208,8 @@
 				margin-top: 30px;
 				padding: 0;
 			}
-			.down_link{
+
+			.down_link {
 				margin: 0 auto;
 				max-width: 100%;
 			}
@@ -663,7 +669,7 @@
 				<div class="col-md-4">
 					<div class="footer-contact">
 						<p>Київ обл., <br /> смт Коцюбинське</p>
-						<p>Email : shlifpallet@ukr.net, <br />Телефон : +380 (97) 285 26 27</p>
+						<p>Email : shlifpallet@ukr.net, <br />Телефон : <a href="tel:+380 (97) 285 26 27">+380 (97) 285 26 27</a></p>
 					</div>
 				</div>
 
@@ -685,7 +691,7 @@
 			<div class="row">
 				<div class="col-md-5">
 					<div class="need-help">
-						<p>Є питання? Дозвольте нам допомогти вам. Телефонуйте: <br> +380 (97) 285 26 27</p>
+						<p>Є питання? Дозвольте нам допомогти вам. Телефонуйте: <br> <a href="tel:+380 (97) 285 26 27">+380 (97) 285 26 27</a></p>
 					</div>
 				</div>
 
@@ -815,6 +821,26 @@
 	</script>
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script>
+		$(documnet).ready(function () {
+			$(".formFeedBack").on("submit", function () {
+				let dataSubmit = $(this).serialize()
+				$.ajax({
+					url: './api.php',
+					method: 'post',
+					dataType: 'html',
+					data: dataSubmit,
+					success: function (data) {
+						console.log(data);
+						$("form.formFeedBack .messageBlockForm").addClass("active")
+						setTimeout(() => {
+							$("form.formFeedBack .messageBlockForm").removeClass("active")
+						}, 3000);
+					}
+				});
+			})
+		})
+	</script>
 </body>
 
 </html>
