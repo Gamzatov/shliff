@@ -560,40 +560,47 @@
 		#business {
 			background-color: #231F1D;
 		}
+
+		/* .messageBlockForm {
+			display: none;
+		} */
+		.messageBlockForm > span{
+			color: green;
+			font-size: 40px;
+		}
+		.messageBlockForm {
+			display: flex;
+			box-shadow: 0 0 3px rgba(0, 0, 0, .526);
+			justify-content: center;
+			align-items: center;
+			column-gap: 20px;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			z-index: 999;
+			padding: 20px;
+			transform: translate(-50%,-50%);
+			background-color: #fff;
+			border-radius: 20px;
+			border: 5px solid #231F1D;
+		}
+		.close{
+			position: absolute;
+			top: -20px;
+			right: -20px;
+			background-color: #fff;
+			display: flex;
+			border: 2px solid red;
+			justify-content: center;
+			align-items: center;
+			opacity: 1;
+			border-radius: 50%;
+			width: 40px;
+			height: 40px;
+		}
+	
 	</style>
-	<!-- Design Showcase section ends -->
 
-	<!-- Testimonial starts -->
-	<!-- <section class="testimonials parallaxie" id="testimonial">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-title wow fadeInUp">
-						<p>Відгук клієнта</p>
-						<h2>Відгук від покупця</h2>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-12">
-					<div class="testimonial-slider">
-						<section class="testimonials">
-							<div class="container">
-
-								<div class="row">
-									<div class="col-sm-12">
-									</div>
-								</div>
-							</div>
-						</section>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-	<!-- Testimonial ends -->
 
 
 
@@ -648,9 +655,13 @@
 								</div>
 
 								<div class="col-md-12 col-sm-12">
-									<button type="submit" class="-contact btn-shopnow"
+									<button id="btn" type="submit" class="-contact btn-shopnow"
 										title="Submit Your Message!">Відправити</button>
 									<div id="msgSubmit" class="h3 text-left hidden"></div>
+								</div>
+								<div class="messageBlockForm" id="btnw"> 
+									<div class="close"  onclick="closeW()"><ion-icon name="close-circle-outline"></ion-icon></div>
+									<span> <ion-icon name="checkmark-circle-outline"></ion-icon> </span> <p> Сообщение успешно отправленно!</p>
 								</div>
 							</div>
 						</form>
@@ -669,7 +680,8 @@
 				<div class="col-md-4">
 					<div class="footer-contact">
 						<p>Київ обл., <br /> смт Коцюбинське</p>
-						<p>Email : shlifpallet@ukr.net, <br />Телефон : <a href="tel:+380 (97) 285 26 27">+380 (97) 285 26 27</a></p>
+						<p>Email : shlifpallet@ukr.net, <br />Телефон : <a href="tel:+380 (97) 285 26 27">+380 (97) 285
+								26 27</a></p>
 					</div>
 				</div>
 
@@ -691,7 +703,8 @@
 			<div class="row">
 				<div class="col-md-5">
 					<div class="need-help">
-						<p>Є питання? Дозвольте нам допомогти вам. Телефонуйте: <br> <a href="tel:+380 (97) 285 26 27">+380 (97) 285 26 27</a></p>
+						<p>Є питання? Дозвольте нам допомогти вам. Телефонуйте: <br> <a
+								href="tel:+380 (97) 285 26 27">+380 (97) 285 26 27</a></p>
 					</div>
 				</div>
 
@@ -737,6 +750,12 @@
 	<script src="js/function.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script>
+		let btn = document.getElementById('btnw');
+		function closeW(){
+			btn.style.display = 'none';
+		}
+	</script>
 	<script>
 		jQuery("#carousel").owlCarousel({
 			autoplay: true,
@@ -822,7 +841,7 @@
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	<script>
-		$(documnet).ready(function () {
+		$(document).ready(function () {
 			$(".formFeedBack").on("submit", function () {
 				let dataSubmit = $(this).serialize()
 				$.ajax({
