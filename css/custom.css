@@ -1091,9 +1091,9 @@ footer{
 	  /* background: rgba(255, 255, 255, 0.38) !important; */
   }
   span {
-	  font-size: 70px;    
+	  font-size: 25px;    
 	  position: relative;
-	  top: -5px;
+	  top: -3px;
   }
   .owl-nav button:focus {
 	  outline: none;
