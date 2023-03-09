@@ -114,11 +114,11 @@
 				<div class="widget">
 					<ul class="link">
 						<li class="active scroll"><a href="#home"><i class="fa fa-home"></i> Головна</a></li>
-						<li class="scroll"><a href="#about"><i class="fa fa-user "></i> Про нас</a></li>
-						<li class="scroll"><a href="#feature"><i class="fa fa-heart"></i> Особливості</a></li>
 						<li class="scroll"><a href="#business"><i class="fa fa-heart"></i> Для Бізнесу</a></li>
-						<!-- <li class="scroll"><a href="#testimonial"><i class="fa fa-comments"></i> Відгуки</a></li> -->
-						<li class="scroll"><a href="#showcase"><i class="fa fa-file-image-o"></i> Галерея</a></li>
+						<li class="scroll"><a href="#garden"><i class="fa fa-user"></i> Для Саду</a></li>
+						<li class="scroll"><a href="#house"><i class="fa fa-home"></i> Для оселі</a></li>
+						<li class="scroll"><a href="#pets"><i class="fa fa-comments"></i> Для Тварин</a></li>
+						<li class="scroll"><a href="#presents"><i class="fa fa-file-image-o"></i> Подарунки</a></li>
 						<li class="scroll"><a href="#contact"><i class="fa fa-Телефон"></i> Контакти</a></li>
 					</ul>
 				</div>
@@ -340,7 +340,7 @@
 	</section>
 
 	<!-- About us section starts -->
-	<section class="aboutus" id="about">
+	<section class="aboutus" id="garden">
 		<div class="container">
 			<div class="row">
 				<!-- About us content start -->
@@ -412,56 +412,55 @@
 								width: 100%;
 								text-align: center;
 							}
-
-							.col-md-7.col-sm-6 {
+							.col-md-7.col-sm-6{
 								margin-top: 30px;
 							}
 						</style>
 
 					</div>
 				</div>
-			</div>
-			<div class="col-md-5 col-sm-6">
-				<div class="section-title">
-					<p style="margin-top: 20px;">Для Саду</p>
-					<h2>Ви мрієте - ми робимо</h2>
+				
+				<div class="col-md-5 col-sm-6" >
+					<div class="section-title">
+						<p style="margin-top: 20px;">Для Саду</p>
+						<h2>Ви мрієте - ми робимо</h2>
+					</div>
+
+					<div class="about-entry">
+						<p>Потрібні дешеві та якісні садові меблі? Ми гарантовано Вам допоможемо! Відпочинок в саду буде
+							більш комфортним і затишним. Всі замовлення виконуємо вчасно. Наші меблі легко переміщати й
+							транспортувати, якщо Ви вирішите поставити їх у іншому місці саду чи до альтанки. Вони лігко
+							розбираються, якщо їх треба перевезти. Виготовлені з якісної деревини.
+						</p>
+
+						<p>
+							<i>
+								Ціна від 1000грн за пог.м
+							</i>
+						</p>
+
+					</div>
+					<div class="btn_wrapper sec_btn_right">
+						<a class="btn-shopnow" href="#contact"> <ion-icon name="call-outline"></ion-icon> Зв'язатися</a>
+					</div>
 				</div>
+				<!-- About us Image end -->
 
-				<div class="about-entry">
-					<p>Потрібні дешеві та якісні садові меблі? Ми гарантовано Вам допоможемо! Відпочинок в саду буде
-						більш комфортним і затишним. Всі замовлення виконуємо вчасно. Наші меблі легко переміщати й
-						транспортувати, якщо Ви вирішите поставити їх у іншому місці саду чи до альтанки. Вони лігко
-						розбираються, якщо їх треба перевезти. Виготовлені з якісної деревини.
-					</p>
-
-					<p>
-						<i>
-							Ціна від 1000грн за пог.м
-						</i>
-					</p>
-
-				</div>
-				<div class="btn_wrapper sec_btn_right">
-					<a class="btn-shopnow" href="#contact"> <ion-icon name="call-outline"></ion-icon> Зв'язатися</a>
-				</div>
-			</div>
-			<!-- About us Image end -->
-
-			<!-- About us Image start -->
-			<!-- <div class="col-md-3 col-sm-3 col-xs-6">
+				<!-- About us Image start -->
+				<!-- <div class="col-md-3 col-sm-3 col-xs-6">
 					<div class="about-image wow fadeInRight" data-wow-delay="0.4s">
 						<img src="images/about-2.jpg" alt="" />
 					</div>
 				</div> -->
-			<!-- About us Image end -->
-		</div>
+				<!-- About us Image end -->
+			</div>
 		</div>
 	</section>
 	<!-- About us section ends -->
 
 
 
-	<section class="features" id="feature">
+	<section class="features" id="house">
 		<div class="container">
 			<div class="row">
 				<!-- Feature image start -->
@@ -559,7 +558,7 @@
 
 	<!-- Features section ends -->
 	<!-- Design Showcase section starts -->
-	<section class="design-showcase" id="showcase">
+	<section class="design-showcase" id="pets">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-5">
@@ -617,7 +616,7 @@
 							</p>
 
 						</div>
-						<div class="btn_wrapper sec_btn_left">
+						<div class="btn_wrapper sec_btn_right">
 							<a class="btn-shopnow" href="#contact"> <ion-icon name="call-outline"></ion-icon>
 								Зв'язатися</a>
 						</div>
@@ -631,7 +630,7 @@
 			</div> -->
 		</div>
 	</section>
-	<section class="design-showcase" id="showcase">
+	<section class="design-showcase" id="presents">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -716,9 +715,11 @@
 			}
 
 			#about,
-			#feature,
-			#showcase,
-			#business {
+			#garden,
+			#house,
+			#business, 
+			#pets,
+			#presents			{
 				background-color: #231F1D;
 			}
 
