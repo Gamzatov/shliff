@@ -325,7 +325,7 @@ nav.navbar.bootsnav {
   width: 20%;
   position: absolute;
   top: 0;
-  right:50%;
+  right: 50%;
   bottom: 0;
   background: #9c8d77;
   transform: skewX(-14deg);
@@ -345,7 +345,7 @@ nav.navbar.bootsnav {
 }
 
 .header-content h2 {
-  color: #231F1D;
+  color: #231f1d;
   font-size: 50px;
   font-weight: 900;
   text-transform: uppercase;
@@ -1165,24 +1165,66 @@ span {
   transition: all 250ms ease-out 0s;
   width: 20px;
 }
-.sec_btn_left>p{
-	margin: 0;
-	font-size: 17px;
-	color: #fcc481;
+.sec_btn_left > p {
+  margin: 0;
+  font-size: 17px;
+  color: #fcc481;
+  text-align: center;
+}
+.sec_btn_left {
+  display: block !important;
+}
+@media (max-width: 762px) {
+  #customers-testimonials .item {
+    padding: 0;
+  }
+  .row-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .mob-mb {
+    margin-bottom: 30px;
+  }
+  .banner {
+    height: 100%;
+	padding: 132px 0 100px;
+  }
+  .btn_wrapper {
+    display: block !important;
+  }
+  .btn_wrapper > a {
+    width: 100%;
+  }
+  nav > .container > .navbar-header > .logo_text_wrapper {
+    margin-left: -49px;
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  .item > img {
+    height: 100%;
+  }
+.head-btn{
 	text-align: center;
 }
-.sec_btn_left{
-	display: block !important;
+.btn-shopnow{
+	margin-top: 0;
+	margin-bottom: 10px;
 }
-@media(max-width:762px){
-	#customers-testimonials .item{
-		padding: 0;
-	}
-	.row-reverse{
-		display: flex;
-		flex-direction: column-reverse;
-	}
-	.mob-mb{
-		margin-bottom: 30px;
-	}
+  .down_link {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .btn_wrapper {
+    flex-direction: column;
+  }
+
+  .prom_head {
+    background-position: left;
+  }
+
+  .col-xs-6 {
+    width: 100%;
+  }
 }
