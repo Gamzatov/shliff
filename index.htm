@@ -283,6 +283,9 @@
 									<img src="./images/bussines/4.JPG" alt="">
 								</div>
 								<div class="item">
+									<img src="./images/bussines/44.JPG" alt="">
+								</div>
+								<div class="item">
 									<img src="./images/bussines/5.JPG" alt="">
 								</div>
 								<div class="item">
@@ -724,15 +727,16 @@
 				margin-right: -20px !important;
 			}
 
-			@media(max-width:762px){
+			@media(max-width:762px) {
 				.owl-prev {
-				margin-left: -10px !important;
+					margin-left: -10px !important;
+				}
+
+				.owl-next {
+					margin-right: -10px !important;
+				}
 			}
 
-			.owl-next {
-				margin-right: -10px !important;
-			}
-			}
 			#about,
 			#garden,
 			#house,
@@ -785,8 +789,98 @@
 			}
 		</style>
 	</section>
+	<section class="design-showcase" id="presents">
+		<div class="container">
+			<div class="row">
+				<div class="section-title">
+					<div class="section-title wow fadeInUp" data-wow-delay="0.2s">
+						<p> Відгуки </p>
+						<h2>Відгуки наших клієнтів </h2>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<!-- TESTIMONIALS -->
+					<section class="testimonials">
+						<div class="container">
 
+							<div class="row">
+								<div class="col-sm-12">
+									<div id="customers-testimonials" class="owl-carousel">
 
+										<!--TESTIMONIAL 1 -->
+										<div class="item">
+											<div class="shadow-effect">
+												<p>
+
+													Доброго дня! Ліжко просто шикарне! Дуже задоволена якістю, ціною і
+													швидкістю виконання замовлення. Окремо дякую за урахування моїх
+													побажань в деталях, обов'язково буду Вас рекомендувати своїм
+													друзям❤️</p>
+											</div>
+											<div class="testimonial-name">Ліжко для оселі</div>
+										</div>
+										<!--END OF TESTIMONIAL 1 -->
+										<!--TESTIMONIAL 2 -->
+										<div class="item">
+											<div class="shadow-effect">
+												<p>
+													Я замовленням дуже задоволена! Швидко зі мною зв' язалися, все вірно
+													виконали по моїм розмірам. Постійно були на заязку. Швидко
+													вигутовили
+													замовлення та швидко доставили. Співпрацею я дуже задоволена. 🤗</p>
+											</div>
+											<div class="testimonial-name">Будинок для улюбленців </div>
+										</div>
+										<!--END OF TESTIMONIAL 2 -->
+										<!--TESTIMONIAL 3 -->
+										<div class="item">
+											<div class="shadow-effect">
+												<p>Через 2 тижня після доставки
+													Вчора ввечері , несподвійно ліжко втратило міць і трошки зламалася
+													основа , одна дошка . Мабуть сучок 🙄якись . Но нічого . В 22:00
+													написала хлопцям , а в 11 ранку наступного дня в нас вже все було
+													Ціле ! Оце рівень ! Дякую !
+													Приємно коли так ! Хай кожному так щастить 🤗</p>
+											</div>
+											<div class="testimonial-name">Меблі для оселі</div>
+										</div>
+										<!--END OF TESTIMONIAL 5 -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- END OF TESTIMONIALS -->
+
+					<div class="btn_wrapper prom">
+						<a class="btn-shopnow" href="#contact">  </a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+<style>
+	.prom{
+		justify-content: center;
+	}
+	.prom > a{
+		background-color: #FCC481;
+		background-image: url('./images/prom.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 200px;
+		background-position: center;
+		height: 50px;
+	}
+	.prom > a:hover{
+		background-image: url('./images/prom.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+</style>
 
 	<!-- Get in touch section starts -->
 	<section class="contactus" id="contact">
@@ -977,6 +1071,33 @@
 			// 		items: 4
 			// 	}
 			// }
+		});
+	</script>
+	<script>
+		jQuery(document).ready(function ($) {
+			"use strict";
+			//  TESTIMONIALS CAROUSEL HOOK
+			$('#customers-testimonials').owlCarousel({
+				loop: true,
+				center: true,
+				items: 3,
+				margin: 0,
+				autoplay: true,
+				dots: true,
+				autoplayTimeout: 8500,
+				smartSpeed: 450,
+				responsive: {
+					0: {
+						items: 1
+					},
+					768: {
+						items: 2
+					},
+					1170: {
+						items: 3
+					}
+				}
+			});
 		});
 	</script>
 	<script>
