@@ -311,7 +311,7 @@ nav.navbar.bootsnav {
 .banner:after {
   content: "";
   display: block;
-  width: 46%;
+  width: 60%;
   position: absolute;
   top: 0;
   right: 0;
@@ -325,7 +325,7 @@ nav.navbar.bootsnav {
   width: 20%;
   position: absolute;
   top: 0;
-  right: 32%;
+  right:50%;
   bottom: 0;
   background: #9c8d77;
   transform: skewX(-14deg);
@@ -345,7 +345,7 @@ nav.navbar.bootsnav {
 }
 
 .header-content h2 {
-  color: #413f3f;
+  color: #231F1D;
   font-size: 50px;
   font-weight: 900;
   text-transform: uppercase;
@@ -354,7 +354,7 @@ nav.navbar.bootsnav {
 
 .header-content p {
   color: #fff;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1.5em;
 }
@@ -363,6 +363,8 @@ nav.navbar.bootsnav {
   display: inline-block;
   background: #413f3f;
   color: #fff;
+  width: 100%;
+  text-align: center;
   font-size: 14px;
   letter-spacing: 0.25em;
   font-weight: 400;
@@ -419,7 +421,7 @@ nav.navbar.bootsnav {
 .section-title p {
   color: #aaa7a7;
   position: relative;
-  font-size: 14px;
+  font-size: 17px;
   padding-left: 70px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1162,6 +1164,15 @@ span {
   transform-origin: 50% 50% 0;
   transition: all 250ms ease-out 0s;
   width: 20px;
+}
+.sec_btn_left>p{
+	margin: 0;
+	font-size: 17px;
+	color: #fcc481;
+	text-align: center;
+}
+.sec_btn_left{
+	display: block !important;
 }
 @media(max-width:762px){
 	#customers-testimonials .item{
