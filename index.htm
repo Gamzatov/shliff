@@ -144,58 +144,76 @@
 
 
 					</div>
-					<div class="btn_wrapper ">
+					<div class="btn_wrapper head-btns">
 
 						<div class="head-btn">
-							<p>Доставка по всій Україні</p>
+							<p>Доставка <br> по всій Україні</p>
 							<a class="btn-shopnow" href="https://www.instagram.com/shlifpallet/"><ion-icon
 									name="logo-instagram"></ion-icon> Instagram</a>
 						</div>
 						<div class="head-btn">
 							<p>
-								500 задоволених клієнтів
+								<b> 500 </b> <br> задоволених клієнтів
 							</p>
 							<a href="https://www.facebook.com/shlifpallet" class="btn-shopnow "><ion-icon
 									name="logo-facebook"></ion-icon> Facebook</a>
 						</div>
 						<div class="head-btn">
 							<p>
-								Більше 200 відкритих закладів
+								Більше <b> 200</b> <br> відкритих закладів
 							</p>
 							<a class="btn-shopnow" href="https://vm.tiktok.com/ZMYyoMywu/"><ion-icon
 									name="logo-tiktok"></ion-icon> Tik-Tok</a>
 						</div>
 
 					</div>
-					<div class="btn_wrapper_head down_link">
-						<a class="btn-shopnow" href="#contact"> <ion-icon name="call-outline"></ion-icon> Зв'язатися</a>
-					</div>
 					<!-- Header content ends -->
 				</div>
-
-
+			</div>
+			<div class="btn_wrapper_head down_link">
+				<a class="btn-shopnow" href="#contact"> <ion-icon name="call-outline"></ion-icon> Зв'язатися</a>
 			</div>
 		</div>
 	</section>
 	<style>
+		.head-btns{
+			margin-top: 80px;
+		}
+		.head-btn > p > b{
+			font-size: 25px;
+		}
 		.btn_wrapper_head {
+			position: absolute;
+			z-index: 2;
+			bottom: 50px;
+			left: 50%;
 			display: flex;
 			/* justify-content: space-around; */
 			column-gap: 10px;
 			align-items: center;
-			width: 92.5%;
-			justify-content: start;
+			width: 50%;
+			transform: translate(-50%,0);
+			justify-content: center;
+			margin-top: 50px;
 			margin-top: 30px;
 		}
-		.btn_wrapper{
+
+		.btn_wrapper {
 			display: flex;
 			width: 100%;
 			column-gap: 10px;
 			align-items: center;
 			justify-content: start;
-			margin-top: 30px;
+			
 		}
-
+		.head-btns {
+			display: flex;
+			width: 100%;
+			column-gap: 10px;
+			align-items: center;
+			justify-content: space-around;
+			margin-top: 80px;
+		}
 		.prom_head {
 			width: 150px;
 			height: 45px;
@@ -203,6 +221,9 @@
 			background-size: contain;
 			background-position: center;
 			background-repeat: no-repeat;
+		}
+		.header-content {
+			margin-top: -50px;
 		}
 
 		.prom_head:hover {
@@ -219,12 +240,10 @@
 		} */
 
 		.down_link>a {
-			width: 100%;
+			width: 40%;
 			text-align: center;
-			background-color: #111;
+			background-color: #fcc481;
 		}
-
-	
 	</style>
 	<!-- Banner Section Ends -->
 	<section class="features" id="business">
@@ -240,14 +259,21 @@
 					</div>
 
 					<div class="feature-entry">
-						<p>Для старту бізнеса це найдешевший спосіб виготовлення меблів в порівнянні з ДСП меблями десь
-							50% дешевше
-						</p>
 
-						<p>Ви відкриваєте кав'ярню, ресторан чи запускаєте стартап? Треба якісні меблі швидко і дешево?
-							Тоді вам до нас. Індивідуальний підхід до кожного клієнта. Наші меблі дуже легко розбирати і
+						<p>
+							Ви відкриваєте кав'ярню, ресторан чи запускаєте стартап?
+						<p>
+						<p>
+							Треба якісні меблі швидко і дешево?
+						</p>
+						<p>
+							Тоді вам до нас. 
+						</p>
+						<p>
+						Індивідуальний підхід до кожного клієнта. Наші меблі дуже легко розбирати і
 							транспортувати, бо вони з якісної деревини і можуть витримати переїзд без втрати якості. А у
-							разі випадкових пошкоджень під час використання меблі дешево і легко ремонтуються.</p>
+							разі випадкових пошкоджень під час використання меблі дешево і легко ремонтуються.
+						</p>
 						<p>
 							<i>
 								*Ціна від 2499 за пог.м
@@ -258,9 +284,18 @@
 					<p style="color: #fff; margin-top: 50px;">
 						Cеред наших партнерів
 					</p>
-					<p style="color: green">
-						Jacobs, Книгарня Є, Kvertus
-					</p>
+					<div class="partenrs">
+						<p style="color: green">
+							Jacobs
+						</p>
+						<p style="color: green">
+							Книгарня Є
+						</p>
+						<p style="color: green">
+							Kvertus
+						</p>
+					</div>
+
 
 				</div>
 				<!-- Feature content end -->
@@ -481,7 +516,7 @@
 
 						<div class="btn_wrapper sec_btn_left">
 							<div class="sec_btn_left">
-								<p>Більше 20видів меблів</p>
+								<p>Більше <b> 20 </b> видів меблів</p>
 								<a class="btn-shopnow" href="#contact"> <ion-icon name="call-outline"></ion-icon>
 									Хочу Loft</a>
 							</div>
@@ -567,7 +602,7 @@
 				<div class="col-md-5">
 
 				</div>
-	
+
 			</div>
 
 			<div class="row">
@@ -610,7 +645,7 @@
 								</i>
 							</p>
 						</div>
-					
+
 					</div>
 				</div>
 			</div>
@@ -647,7 +682,7 @@
 							</p>
 
 						</div>
-					
+
 						<div class="btn_wrapper sec_btn_left">
 							<div class="sec_btn_left">
 								<p>Більше 10видів винних поличок </p>
