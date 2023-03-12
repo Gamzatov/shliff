@@ -1171,4 +1171,7 @@ span {
 		display: flex;
 		flex-direction: column-reverse;
 	}
+	.mob-mb{
+		margin-bottom: 30px;
+	}
 }
