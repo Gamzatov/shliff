@@ -1258,9 +1258,22 @@ span {
 	text-align: center;
 	background-color: #fcc481;
 }
+.head-btns{
+  position: absolute;
+  bottom: 50px;
+  max-width: 812px;
+  z-index: 2;
+  right: 130px;
+
+}
 @media (max-width: 762px) {
   #customers-testimonials .item {
     padding: 0;
+  }
+  .head-btns{
+    position: relative;
+    right: 0;
+    bottom: 0;
   }
   .row-reverse {
     display: flex;

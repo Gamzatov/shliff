@@ -149,31 +149,32 @@
 
 
 					</div>
-					<div class="btn_wrapper head-btns">
-
-						<div class="head-btn">
-							<p>Доставка <br> по всій Україні</p>
-							<a class="btn-shopnow" href="https://www.instagram.com/shlifpallet/"><ion-icon
-									name="logo-instagram"></ion-icon> Instagram</a>
-						</div>
-						<div class="head-btn">
-							<p>
-								<b> <span id="out">0</span>+</b> <br> задоволених клієнтів
-							</p>
-							<a href="https://www.facebook.com/shlifpallet" class="btn-shopnow "><ion-icon
-									name="logo-facebook"></ion-icon> Facebook</a>
-						</div>
-						<div class="head-btn">
-							<p>
-								<b> <span id="out2">0</span>+</b> <br> відкритих закладів
-							</p>
-							<a class="btn-shopnow" href="https://vm.tiktok.com/ZMYyoMywu/"><ion-icon
-									name="logo-tiktok"></ion-icon> Tik-Tok</a>
-						</div>
-
-					</div>
+					
 					<!-- Header content ends -->
 				</div>
+			</div>
+			<div class="btn_wrapper head-btns">
+
+				<div class="head-btn">
+					<p>Доставка <br> по всій Україні</p>
+					<a class="btn-shopnow" href="https://www.instagram.com/shlifpallet/"><ion-icon
+							name="logo-instagram"></ion-icon> Instagram</a>
+				</div>
+				<div class="head-btn">
+					<p>
+						<b> <span id="out">0</span>+</b> <br> задоволених клієнтів
+					</p>
+					<a href="https://www.facebook.com/shlifpallet" class="btn-shopnow "><ion-icon
+							name="logo-facebook"></ion-icon> Facebook</a>
+				</div>
+				<div class="head-btn">
+					<p>
+						<b> <span id="out2">0</span>+</b> <br> відкритих закладів
+					</p>
+					<a class="btn-shopnow" href="https://vm.tiktok.com/ZMYyoMywu/"><ion-icon
+							name="logo-tiktok"></ion-icon> Tik-Tok</a>
+				</div>
+
 			</div>
 			<div class="btn_wrapper_head down_link ">
 				<a class="btn-shopnow color-b" href="#contact"> <ion-icon name="call-outline"></ion-icon> Зв'язатися</a>
@@ -1350,7 +1351,7 @@
 			let t = Math.round(time / (num / step));
 			let interval = setInterval(() => {
 				n = n + step;
-				if (n == num) {
+				if (n === num || n >= num) {
 					clearInterval(interval);
 				}
 				e.innerHTML = n;
@@ -1362,7 +1363,7 @@
 			let t = Math.round(time / (num / step));
 			let interval = setInterval(() => {
 				n = n + step;
-				if (n == num) {
+				if (n === num || n >= num) {
 					clearInterval(interval);
 				}
 				e.innerHTML = n;
