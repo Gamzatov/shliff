@@ -1326,4 +1326,10 @@ span {
   .head-btns{
 	margin-top: 40px;
   }
+  .btn_wrapper_head{
+    left: 50%;
+  }
+  .header-content  > p{
+    padding-top: 0;
+  }
 }
