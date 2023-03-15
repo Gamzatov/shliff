@@ -76,9 +76,42 @@
 					<p class="logo_text_wrapper"> <a class="navbar-brand logo_text_link" href="#"><img
 								src="./logo_text.png" class="logo_text" alt=""></a></p>
 
+					<div class="header-conatcts">
+						<p>
+							<ion-icon name="call-outline"></ion-icon>
+							+380 (97) 285 26 27
+						</p>
+						<p>
+							<a href="#">
+								<img src="./images/tg.webp" style="max-width: 30px;" alt="">
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								<img src="./images/viber.png" style="max-width: 35px;" alt="">
+							</a>
+						</p>
+					</div>
 				</div>
 			</div>
+
 			<style>
+				.header-conatcts > p{
+					display: flex;
+					align-items: center;
+					column-gap: 10px;
+				}
+				.header-conatcts{
+					position: absolute;
+					top: 30px;
+					font-size: 20px;
+					left: 50%;
+					transform: translate(-50%, 0);
+					font-weight: bold;
+					display: flex;
+					align-items: center;
+					column-gap: 20px;
+				}
 				nav>.container>.navbar-header>.logo_text_wrapper {
 					margin-left: -35px;
 					margin-top: -70px;
@@ -113,18 +146,18 @@
 			<div class="side">
 				<a href="#" class="close-side"><i class="fa fa-times"></i></a>
 				<div class="side-logo">
-					<img src="./logo.jpg" alt="" />
+					<img src="./logo2.png" alt="" />
 				</div>
 
 				<div class="widget">
 					<ul class="link">
 						<li class="active scroll"><a href="#home"><i class="fa fa-home"></i> Головна</a></li>
-						<li class="scroll"><a href="#business"><i class="fa fa-heart"></i> Для Бізнесу</a></li>
-						<li class="scroll"><a href="#garden"><i class="fa fa-user"></i> Для Саду</a></li>
+						<li class="scroll"><a href="#business"><i class="fa fa-solid fa-briefcase"></i> Для Бізнесу</a></li>
+						<li class="scroll"><a href="#garden"><i class="fa fa-solid fa-tree"></i> Для Саду</a></li>
 						<li class="scroll"><a href="#house"><i class="fa fa-home"></i> Для оселі</a></li>
-						<li class="scroll"><a href="#pets"><i class="fa fa-comments"></i> Для Тварин</a></li>
-						<li class="scroll"><a href="#presents"><i class="fa fa-file-image-o"></i> Подарунки</a></li>
-						<li class="scroll"><a href="#testimonials"><i class="fa fa-file-image-o"></i> Відгуки</a></li>
+						<li class="scroll"><a href="#pets"><i class="fa fa-solid fa-paw"></i> Для Тварин</a></li>
+						<li class="scroll"><a href="#presents"><i class="fa fa-solid fa-gift"></i> Подарунки</a></li>
+						<li class="scroll"><a href="#testimonials"><i class="fa fa-regular fa-comment"></i> Відгуки</a></li>
 						<li class="scroll"><a href="#contact"><i class="fa fa-Телефон"></i> Контакти</a></li>
 					</ul>
 				</div>
@@ -149,7 +182,7 @@
 
 
 					</div>
-					
+
 					<!-- Header content ends -->
 				</div>
 			</div>
@@ -187,7 +220,7 @@
 	<!-- Banner Section Ends -->
 	<section class="features" id="business">
 		<div class="container">
-			<div class="row">
+			<div class="row row-flex">
 
 
 				<!-- Feature content start -->
@@ -348,7 +381,7 @@
 	<!-- About us section starts -->
 	<section class="aboutus" id="garden">
 		<div class="container">
-			<div class="row row-reverse">
+			<div class="row row-reverse row-flex">
 				<div class="col-md-6  col-sm-3 col-xs-6">
 					<div class="about-image wow fadeInRight" data-wow-delay="0.2s">
 						<!-- <img src="images/works/small/3.jpg" alt="" /> -->
@@ -483,7 +516,7 @@
 
 	<section class="features" id="house">
 		<div class="container">
-			<div class="row row-reverse">
+			<div class="row row-reverse row-flex">
 				<!-- Feature image start -->
 				<div class="col-md-7 col-sm-6">
 					<div class="section-title">
@@ -646,14 +679,9 @@
 	<!-- Design Showcase section starts -->
 	<section class="design-showcase" id="pets">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-5">
+			
 
-				</div>
-
-			</div>
-
-			<div class="row">
+			<div class="row row-flex">
 				<div class="col-md-12">
 					<div class="col-md-5 col-sm-6">
 						<!-- Showcase slide start -->
@@ -742,7 +770,7 @@
 	</section>
 	<section class="design-showcase" id="presents">
 		<div class="container">
-			<div class="row">
+			<div class="row row-flex">
 				<div class="col-md-12">
 					<div class="col-md-7 col-sm-6">
 						<div class="section-title">

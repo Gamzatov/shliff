@@ -335,6 +335,10 @@ nav.navbar.bootsnav {
   position: relative;
   z-index: 1;
 }
+.row-flex{
+  display: flex;
+  align-items: center;
+}
 
 .header-content h3 {
   font-size: 14px;
@@ -520,7 +524,7 @@ nav.navbar.bootsnav {
 /************************************/
 
 .features {
-  padding: 120px 0;
+  padding: 60px 0;
 }
 
 .features .section-title {
