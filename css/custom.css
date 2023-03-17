@@ -363,7 +363,9 @@ nav.navbar.bootsnav {
   padding-top: 80px;
   line-height: 1.5em;
 }
-
+.align-t{
+  text-align: center;
+}
 .btn-shopnow {
   display: inline-block;
   background: #413f3f;
@@ -373,6 +375,7 @@ nav.navbar.bootsnav {
   font-size: 14px;
   letter-spacing: 0.25em;
   font-weight: 400;
+  min-width: 223px;
   text-transform: uppercase;
   padding: 12px 20px;
   margin-top: 10px;
@@ -609,7 +612,7 @@ nav.navbar.bootsnav {
 /***************************************/
 
 .testimonials {
-  padding: 50px 0;
+  padding: 0;
   background: url(../images/testimonial.jpg) no-repeat top center fixed;
   background-size: cover;
   position: relative;
