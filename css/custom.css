@@ -1135,7 +1135,7 @@ span {
 }
 #customers-testimonials .item {
   text-align: center;
-  padding: 50px;
+  /* padding: 50px; */
   margin-bottom: 0px;
   opacity: 0.2;
   -webkit-transform: scale3d(0.8, 0.8, 1);
@@ -1382,7 +1382,7 @@ border:1px solid #ECECEC;
 }
 #customers-testimonials .item {
   text-align: center;
-  padding: 50px;
+  /* padding: 50px; */
   /* margin-bottom:80px; */
   opacity: .2;
   -webkit-transform: scale3d(0.8, 0.8, 1);
